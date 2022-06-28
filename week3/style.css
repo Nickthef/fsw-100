@@ -1,0 +1,50 @@
+* {
+    background-color: lightcyan;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+b {
+    color: lightcoral;
+}
+
+p {
+    line-height: 20px;
+}
+
+h1, h2 {
+    font-family: Georgia;
+    text-align: center;
+}
+
+h2 {
+    color: green;
+}
+
+img {
+    width: 220px;
+    float: left;
+    padding: 15px;
+}
+
+ol {
+  list-style: none;  
+}
+
+li::before {
+    content: "•"; color: black; display: inline-block; width: 1em; margin-left: -1em;
+}
+
+#top-section h1 {
+    color: blue;
+}
+
+.bottom-section p {
+    text-transform: uppercase;
+}
