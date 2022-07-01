@@ -1,7 +1,16 @@
+<<<<<<< HEAD
 .main-header {
     color: blue;
 }
 
 table, th, td {
     border: 1px solid black;
+=======
+.main-header {
+    color: blue;
+}
+
+table, th, td {
+    border: 1px solid black;
+>>>>>>> 534ece288139b8d1fa74f29079f82cb42e2d9299
 }
