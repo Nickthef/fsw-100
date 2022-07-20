@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Ubuntu&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+img {
+  width: 100%;
+  margin-top: 30px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 0;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  margin-bottom: 10px;
+}
+
+table,
+th,
+td {
+  border: 1px solid;
+}
+
+table {
+  width: 100%;
+  height: 150px;
+}
+
+.first-list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 20px;
+  height: 100vh;
+}
+
+.grid1 > p {
+  display: flex;
+  text-align: center;
+}
+
+.grid1 > h1 {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 50px;
+  background-color: #703f37;
+  border: 1px solid black;
+}
+
+.grid1 {
+  background-color: #c8b7a6;
+  border-radius: 30%;
+}
+
+.grid2 {
+  background-color: #7d94b5;
+  display: flex;
+  justify-content: center;
+}
+
+.grid3 {
+  background-color: #c29591;
+}
+
+.grid4 {
+  background-color: #c8b7a6;
+}
+
+.grid5 {
+  background-color: #b6c199;
+  opacity: 0.8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Medium devices (tablets, I-pads) */
+@media only screen and (min-width: 850px) {
+  table {
+    width: 100%;
+    height: 500px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-auto-rows: minmax(150px, auto);
+    grid-gap: 20px;
+    height: 100vh;
+  }
+
+  .grid1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .grid5 {
+    background-color: #b6c199;
+    opacity: 0.8;
+    text-align: center;
+    padding: 100px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  img {
+    display: none;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-auto-rows: minmax(150px, auto);
+    grid-gap: 20px;
+    height: 100vh;
+  }
+
+  .grid1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .grid3 {
+    background-color: #c29591;
+    background-image: url(https://images.unsplash.com/photo-1477120206578-46b3ca98a4e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+    
+  }
+}
